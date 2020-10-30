@@ -3,23 +3,32 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2673E00D08B61D37605A7706 /* Pods_PushNotificationTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4364CC03227FB9DF09735A4C /* Pods_PushNotificationTest.framework */; };
 		97212419254BA69D00AB748C /* PushNotificationTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97212418254BA69D00AB748C /* PushNotificationTestApp.swift */; };
 		9721241B254BA69D00AB748C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9721241A254BA69D00AB748C /* ContentView.swift */; };
 		9721241D254BA6A300AB748C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9721241C254BA6A300AB748C /* Assets.xcassets */; };
 		97212420254BA6A300AB748C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9721241F254BA6A300AB748C /* Preview Assets.xcassets */; };
+		9721242B254BA8A900AB748C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9721242A254BA8A900AB748C /* GoogleService-Info.plist */; };
+		9721243A254BA9E400AB748C /* AppDelegateswift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97212439254BA9E400AB748C /* AppDelegateswift.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0AA0375006E85689AA776E04 /* Pods-PushNotificationTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PushNotificationTest.debug.xcconfig"; path = "Target Support Files/Pods-PushNotificationTest/Pods-PushNotificationTest.debug.xcconfig"; sourceTree = "<group>"; };
+		4364CC03227FB9DF09735A4C /* Pods_PushNotificationTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PushNotificationTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		97212415254BA69D00AB748C /* PushNotificationTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PushNotificationTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97212418254BA69D00AB748C /* PushNotificationTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotificationTestApp.swift; sourceTree = "<group>"; };
 		9721241A254BA69D00AB748C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9721241C254BA6A300AB748C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9721241F254BA6A300AB748C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		97212421254BA6A300AB748C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97212428254BA81A00AB748C /* PushNotificationTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PushNotificationTest.entitlements; sourceTree = "<group>"; };
+		9721242A254BA8A900AB748C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		97212439254BA9E400AB748C /* AppDelegateswift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateswift.swift; sourceTree = "<group>"; };
+		B13EA636591E7FAF0392B445 /* Pods-PushNotificationTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PushNotificationTest.release.xcconfig"; path = "Target Support Files/Pods-PushNotificationTest/Pods-PushNotificationTest.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,17 +36,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2673E00D08B61D37605A7706 /* Pods_PushNotificationTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C7540FF1DFA81B2B20C5EE0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4364CC03227FB9DF09735A4C /* Pods_PushNotificationTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6B467FD79F1E90ED322361BC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0AA0375006E85689AA776E04 /* Pods-PushNotificationTest.debug.xcconfig */,
+				B13EA636591E7FAF0392B445 /* Pods-PushNotificationTest.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		9721240C254BA69D00AB748C = {
 			isa = PBXGroup;
 			children = (
 				97212417254BA69D00AB748C /* PushNotificationTest */,
 				97212416254BA69D00AB748C /* Products */,
+				6B467FD79F1E90ED322361BC /* Pods */,
+				0C7540FF1DFA81B2B20C5EE0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -52,11 +81,14 @@
 		97212417254BA69D00AB748C /* PushNotificationTest */ = {
 			isa = PBXGroup;
 			children = (
+				97212428254BA81A00AB748C /* PushNotificationTest.entitlements */,
 				97212418254BA69D00AB748C /* PushNotificationTestApp.swift */,
 				9721241A254BA69D00AB748C /* ContentView.swift */,
 				9721241C254BA6A300AB748C /* Assets.xcassets */,
 				97212421254BA6A300AB748C /* Info.plist */,
+				9721242A254BA8A900AB748C /* GoogleService-Info.plist */,
 				9721241E254BA6A300AB748C /* Preview Content */,
+				97212439254BA9E400AB748C /* AppDelegateswift.swift */,
 			);
 			path = PushNotificationTest;
 			sourceTree = "<group>";
@@ -76,9 +108,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 97212424254BA6A300AB748C /* Build configuration list for PBXNativeTarget "PushNotificationTest" */;
 			buildPhases = (
+				E4141C6626FCEFD31D12C714 /* [CP] Check Pods Manifest.lock */,
 				97212411254BA69D00AB748C /* Sources */,
 				97212412254BA69D00AB748C /* Frameworks */,
 				97212413254BA69D00AB748C /* Resources */,
+				A7E4C24F876F1B891732502E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -128,10 +162,53 @@
 			files = (
 				97212420254BA6A300AB748C /* Preview Assets.xcassets in Resources */,
 				9721241D254BA6A300AB748C /* Assets.xcassets in Resources */,
+				9721242B254BA8A900AB748C /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A7E4C24F876F1B891732502E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PushNotificationTest/Pods-PushNotificationTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PushNotificationTest/Pods-PushNotificationTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PushNotificationTest/Pods-PushNotificationTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E4141C6626FCEFD31D12C714 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PushNotificationTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		97212411254BA69D00AB748C /* Sources */ = {
@@ -140,6 +217,7 @@
 			files = (
 				9721241B254BA69D00AB748C /* ContentView.swift in Sources */,
 				97212419254BA69D00AB748C /* PushNotificationTestApp.swift in Sources */,
+				9721243A254BA9E400AB748C /* AppDelegateswift.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,9 +342,11 @@
 		};
 		97212425254BA6A300AB748C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0AA0375006E85689AA776E04 /* Pods-PushNotificationTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PushNotificationTest/PushNotificationTest.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"PushNotificationTest/Preview Content\"";
 				DEVELOPMENT_TEAM = V6B4TS7288;
@@ -286,9 +366,11 @@
 		};
 		97212426254BA6A300AB748C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B13EA636591E7FAF0392B445 /* Pods-PushNotificationTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PushNotificationTest/PushNotificationTest.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"PushNotificationTest/Preview Content\"";
 				DEVELOPMENT_TEAM = V6B4TS7288;
